@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 #home{
@@ -37,11 +38,59 @@
   top: -6%;
   z-index: 10;
 }
-#texts p{
-  color: yellow;
+#texts {
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
   position: relative;
   top: 21rem;
   text-align: center;
+}
+#texts .prgf{
+  color: yellow;
+  font-weight: 700; 
+}
+#texts h2{
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+#texts .prgf2{
+  margin: 1.5rem .5rem 0 .5rem; 
+  line-height: 1.5rem;
+}
+#texts .prgf2 span{
+  font-weight: 700;
+}
+#texts .prgf3{
+  margin: 1.5rem .5rem 0 .5rem; 
+  line-height: 1.5rem;
+}
+#forms{
+  position: relative;
+  top: 21rem;
+  padding: 2rem;
+}
+#forms input{
+  width: 100%;
+  padding: .5rem;
+  border-radius: .2rem;
+  border: none;
+  margin-top: .5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background: #edc24c81;
+  color: rgb(255, 255, 255);
+}
+#forms input::placeholder{
+  color: white;
+}
+#forms #btn{
+  width: 100%;
+  margin-top: .5rem;
+  padding: .8rem;
+  background: #F3832C;
+  border: none;
+  border-radius: .2rem;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
