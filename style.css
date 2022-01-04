@@ -2,46 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
   color: white;
 }
-
+/* ------------ HOME ----------------------- */
 #home{
   background: url("assets/images/background-home.png");
   background-repeat: no-repeat;
-  overflow: hidden;
-  height: 55rem;
-  position: relative;
-}
-#home .money{
-  width: 22rem;
-  position: absolute;
-  right: 30%;
+  height: 100%;
 }
 #home .barbara-home{
-  width: 25rem;
-  position: absolute;
+  width: 100%;
   right: 0;
   left: 0;
-  top: -3%;
   z-index: 1;
-}
-#home .instagram{
-  width: 23rem;
-  position: absolute;
-  left: 38%;
-  top: -8rem;
-}
-#home .title{
-  position: absolute;
-  width: 30rem;
-  right: -15%;
-  top: -6%;
-  z-index: 10;
 }
 #texts {
   font-family: 'Lato', sans-serif;
-  position: relative;
-  top: 21rem;
   text-align: center;
 }
 #texts .prgf{
@@ -64,8 +41,6 @@
   line-height: 1.5rem;
 }
 #forms{
-  position: relative;
-  top: 21rem;
   padding: 2rem;
 }
 #forms input{
@@ -93,4 +68,43 @@
   color: black;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+}
+/* -------------- ABOUT ---------------------*/
+
+#about{
+  background-image: url(assets/images/background-about.png);
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+}
+#title-about{
+  color: rgb(255, 255, 255);
+  font-size: 700;
+  font-size: 1.5rem;
+  z-index: 10;
+  text-align: center;
+  margin: 2rem 1rem 1rem 1rem;
+}
+.box-about{
+  background: #f9f8f815;
+  margin: 1rem 1.5rem 1rem 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.box-about img{
+  width: 20%;
+  margin-left: -.5rem;
+  float: left;
+}
+.box-title{
+  color: #FFD556;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.box-text{
+  margin-top: .5rem;
+
+  text-align: justify;
+  font-size: .8rem;
 }
