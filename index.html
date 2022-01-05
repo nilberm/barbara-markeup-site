@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Jornada da Emprendedora</title>
 </head>
+
 <body>
   <div id="home">
-    <div id="images">
+    <picture id="images">
+      <source media="(min-width: 1000px)" srcset="assets/images/barbara-home-desktop.png">
       <img src="assets/images/barbara-home.png" class="barbara-home" alt="" srcset="">
-    </div>
-    <div id="texts">
+    </picture>
+    <div id="text-desktop">
+      <div id="texts">
+      <div id="rocket-desktop">
+        <img src="assets/images/rocket-home.png" alt="" srcset="">
+      </div>
       <p class="prgf">17 A 20 DE JANEIRO | 100% GRATÚITO</p>
       <h2>CHEGA de não vender por não saber usar o instagram</h2>
-      <p class="prgf2">Vem descobrir em 4 dias o <span>segredo</span> para ter sucesso com seu empreendimento no <span>digital</span> e turbinar suas vendas no <span>instagram</span> através da automaquiagem.
+      <p class="prgf2">Vem descobrir em 4 dias o <span>segredo</span> para ter sucesso com seu empreendimento no
+        <span>digital</span> e turbinar suas vendas no <span>instagram</span> através da automaquiagem.
       </p>
       <p class="prgf3">Se inscreva agora e entre no grupo do whatsapp para receber materiais e avisos!
       </p>
     </div>
-      <form action="" id="forms">
-        <input type="text" id="name" placeholder="Seu primeiro nome">
-        <input type="text" id="email" placeholder="Seu e-mail">
-        <button id="btn" type="submit">QUERO ME INSCREVER GRATUITAMENTE</button>
-       </form>
+    <form action="" id="forms">
+      <input type="text" id="name" placeholder="Seu primeiro nome" required>
+      <input type="email" class="unput" id="email" placeholder="Seu e-mail" required onblur="validationEmail()"
+        onfocus="resetMsg()">
+      <button id="btn" type="submit">QUERO ME INSCREVER GRATUITAMENTE</button>
+    </form></div>
+    
   </div>
   <div id="about">
-    <div class=".imagem-about">     
-     <p id="title-about">O que você vai aprender?</p>
-     <div class="box-about">
-      <img src="assets/images/number-1.png" alt="">
-      <p class="box-title">Descubra como a sua autoimagem está afetando seus resultados.</p>
-      <p class="box-text">Imagina você chegar numa loja presencialmente e a vendedora te atender descabelada, com roupa super amassada. Bem antiprofissional, ne? É exatamente isso que você transmite quando aparece assim nos stories do perfil de sua empresa. Aprenda nessa aula a importancia da autoimagem alinhada com o que você deseja transmitir e atrair.</p>
+    <div class=".imagem-about">
+      <p id="title-about">O que você vai aprender?</p>
+      <div class="box-about">
+        <img src="assets/images/number-1.png" alt="">
+        <p class="box-title">Descubra como a sua autoimagem está afetando seus resultados.</p>
+        <p class="box-text">Imagina você chegar numa loja presencialmente e a vendedora te atender descabelada, com
+          roupa super amassada. Bem antiprofissional, ne? É exatamente isso que você transmite quando aparece assim nos
+          stories do perfil de sua empresa. Aprenda nessa aula a importancia da autoimagem alinhada com o que você
+          deseja transmitir e atrair.</p>
+      </div>
+      <div class="box-about">
+        <img src="assets/images/number-2.png" alt="" srcset="">
+        <p class="box-title">O que toda empreendedora deveria saber sobre Instagram.</p>
+        <p class="box-text">O Instagram vai além de só postar fotos do seu produto, nessa aula vou te apresentar todos
+          os recursos que você pode explorar nessa plataforma, como você deve utilizá-la a seu favor em prol de
+          conquitar mais clientes e obter mais vendas.</p>
+      </div>
+      <div class="box-about">
+        <img src="assets/images/number-3.png" alt="" srcset="">
+        <p class="box-title">Maquiagem na prática: Aprenda uma make elaborada para eventos em 30min.</p>
+        <p class="box-text">A maquiagem pode ser uma grande aliada para você conseguir transmitir a imagem que deseja a
+          seu público e torná-los clientes. Vou te ensinar em um passo a passo simples uma make que você poderá usar
+          para aparecer no Instagram, tirar fotos e até mesmo comparecer em reuniões e eventos da sua empresa.</p>
+      </div>
+      <div class="box-about">
+        <img src="assets/images/number-4.png" alt="" srcset="">
+        <p class="box-title">Passo a passo para transformar o seu perfil, em um perfil que vende.</p>
+        <p class="box-text">Depois de aprender sobre as ferramentas da plataforma, entender sobre a importância da
+          autoimagem e aprender a se maquiar, aqui vou te entregar mastigadinho tudo que você precisa para transformar o
+          seu perfil de um feed portfólio para um feed que vende!</p>
+      </div>
+      <div id="img-about1">
+        <img src="assets/images/background-about.png" alt="" srcset="">
+      </div>
     </div>
-    <div class="box-about">
-      <img src="assets/images/number-2.png" alt="" srcset="">
-      <p class="box-title">O que toda empreendedora deveria saber sobre Instagram.</p>
-      <p class="box-text">O Instagram vai além de só postar fotos do seu produto, nessa aula vou te apresentar todos os recursos que você pode explorar nessa plataforma, como você deve utilizá-la a seu favor em prol de conquitar mais clientes e obter mais vendas.</p>
-    </div>
-    <div class="box-about">
-      <img src="assets/images/number-3.png" alt="" srcset="">
-      <p class="box-title">Maquiagem na prática: Aprenda uma make elaborada para eventos em 30min.</p>
-      <p class="box-text">A maquiagem pode ser uma grande aliada para você conseguir transmitir a imagem que deseja a seu público e torná-los clientes. Vou te ensinar em um passo a passo simples uma make que você poderá usar para aparecer no Instagram, tirar fotos e até mesmo comparecer em reuniões e eventos da sua empresa.</p>
-    </div>
-    <div class="box-about">
-      <img src="assets/images/number-4.png" alt="" srcset="">
-      <p class="box-title">Passo a passo para transformar o seu perfil, em um perfil que vende.</p>
-      <p class="box-text">Depois de aprender sobre as ferramentas da plataforma, entender sobre a importância da autoimagem e aprender a se maquiar, aqui vou te entregar mastigadinho tudo que você precisa para transformar o seu perfil de um feed portfólio para um feed que vende!</p>
-    </div>
-    <div id="img-about1">
-      <img src="assets/images/background-about.png" alt="" srcset="">
-    </div>
-    </div>
-    
+
   </div>
   <div id="about-2">
     <div id="container-about">
@@ -64,39 +83,45 @@
       <p class="subtitle-about-2">- Não sabe utilizar todos os recursos do Instagram para sua empresa<br><br>
 
         - Não atrai muitos clientes de forma orgânica no Instagram<br><br>
-        
+
         - Precisa de um norte de como turbinar suas vendas no digital<br><br></p>
-        <button class="btn-subscribe" onclick="sendHome()">ME INSCREVER GRATUITAMENTE</button>
+      <button class="btn-subscribe" onclick="sendHome()">ME INSCREVER GRATUITAMENTE</button>
     </div>
     <div id="container-about-2">
       <h2>Como Vai funcionar?</h2>
-      <p>Serão 4 aulas ao vivo no Instagram @barbaramotamaquiadora! Todos os links e materiais serão enviados no grupo do Whatsapp!</p>
+      <p>Serão 4 aulas ao vivo no Instagram @barbaramotamaquiadora! Todos os links e materiais serão enviados no grupo
+        do Whatsapp!</p>
       <img src="assets/images/barbara-2.png" alt="">
     </div>
 
     <div id="container-about-3">
       <p class="about-title-3">17 a 20 de janeiro | 100% gratuito</p>
       <p class="subtitle-about-3">Inscreva-se <span>gratuitamente</span> agora!<p>
-      <p class="about-3-text">Faça sua inscrição e entre no grupo do whatsapp para receber materiais e avisos!</p>
-        <button class="btn-subscribe" onclick="sendHome()">ME INSCREVER GRATUITAMENTE</button>
-  </div>
-  <div id="about-me">
-    <img src="assets/images/barbara-3.png" alt="">
-    <div id="text-about-me">
-      <h2>Bárbara Mota</h2>
-      <h3>Conheça um pouco sobre mim...</h3>
-      <p>Sou maquiadora a <span>5 anos</span> e só consegui de fato captar clientes apenas no Instagram depois que entendei a importância da imagem pessoal e agregar valor ao público através de conteúdos.<br><br>
+          <p class="about-3-text">Faça sua inscrição e entre no grupo do whatsapp para receber materiais e avisos!</p>
+          <button class="btn-subscribe" onclick="sendHome()">ME INSCREVER GRATUITAMENTE</button>
+    </div>
+    <div id="about-me">
+      <img src="assets/images/barbara-3.png" alt="">
+      <div id="text-about-me">
+        <h2>Bárbara Mota</h2>
+        <h3>Conheça um pouco sobre mim...</h3>
+        <p>Sou maquiadora a <span>5 anos</span> e só consegui de fato captar clientes apenas no Instagram depois que
+          entendei a importância da imagem pessoal e agregar valor ao público através de conteúdos.<br><br>
 
-        Estudei muito sobre marketing digital, imagem pessoal e posicionamento, vendas e hoje vejo a <span>importância</span> desses pontos no empreendimento de qualquer pessoa que deseja se <span>destacar no digital</span><br><br>
-        
-        Quero ajudar <span>você conquistar</span> clientes e realizar vendas dos seus produtos ou serviços aqui no digital, tudo <span>mastigadinho e personalizado</span> para o seu empreendimento.<br><br>
-        
-        Se você qwuiser decolar no digital, <span class="bold">VEM COMIGO!</span>
+          Estudei muito sobre marketing digital, imagem pessoal e posicionamento, vendas e hoje vejo a
+          <span>importância</span> desses pontos no empreendimento de qualquer pessoa que deseja se <span>destacar no
+            digital</span><br><br>
+
+          Quero ajudar <span>você conquistar</span> clientes e realizar vendas dos seus produtos ou serviços aqui no
+          digital, tudo <span>mastigadinho e personalizado</span> para o seu empreendimento.<br><br>
+
+          Se você qwuiser decolar no digital, <span class="bold">VEM COMIGO!</span>
         </p>
         <button class="btn-subscribe" onclick="sendHome()">ME INSCREVER GRATUITAMENTE</button>
+      </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
