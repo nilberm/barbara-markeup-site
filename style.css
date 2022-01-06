@@ -22,6 +22,9 @@ body{
 #rocket-desktop{
  display: none;   
 }
+#text-desktop{
+  margin: 0 2rem 0 2rem;
+}
 #texts {
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -48,27 +51,8 @@ body{
 #forms{
   padding: 2rem;
 }
-#forms input{
-  width: 100%;
-  padding: .5rem;
-  border-radius: .2rem;
-  border: none;
-  margin-top: .5rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  background: #edc24c81;
-  color: rgb(255, 255, 255);
-}
-#forms input::placeholder{
-  color: white;
-}
-#forms .error{
-  border: 2px solid hsl(0, 100%, 74%);
-  background-image: url(assets/images/icon-error.svg);
-  background-repeat: no-repeat;
-  background-position: 98% 50%;
-}
+
+
 #forms #btn{
   width: 100%;
   margin-top: .5rem;
@@ -226,15 +210,18 @@ body{
 }
 #about-me h2{
   font-size: 2rem;
-  text-align: left;
+  text-align: center;
+  margin-top: -1rem;
 }
 #about-me h3{
   margin: 1rem 0 .5rem 0;
   color: #FFD556;
   text-align: left;
+  text-align: center;
 }
 #about-me p{
   text-align: left;
+  margin: 0 .5rem 0 .5rem;
 }
 #about-me span{
   font-weight: 700;
@@ -303,14 +290,14 @@ body{
     margin-top: 2rem;
     padding: 0;
   }
-  #forms input{
-    margin-bottom: .5rem;
-    height: 3rem;
-  }
+
   #forms #btn{
     height: 3rem;
     font-size: .8rem;
     margin-bottom: 2rem;
+  }
+  #text-about-me{
+    margin: 0 2rem 0 2rem;
   }
 
   /* -------------- ABOUT ---------------------*/
@@ -407,5 +394,7 @@ body{
   #about .box-about img{
     width: 12%;
   }
-  
+  #text-desktop{
+    margin-top: 5rem;
+  }
 }
