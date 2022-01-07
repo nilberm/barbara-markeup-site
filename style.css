@@ -19,6 +19,9 @@ body{
   left: 0;
   z-index: 1;
 }
+#images img{
+  background-size: contain;
+}
 #rocket-desktop{
  display: none;   
 }
@@ -48,14 +51,11 @@ body{
   margin: 1.5rem .5rem 0 .5rem; 
   line-height: 1.5rem;
 }
-#forms{
-  padding: 2rem;
-}
 
 
-#forms #btn{
+#btn{
   width: 100%;
-  margin-top: .5rem;
+  margin: 3rem 0 3rem 0;
   padding: .8rem;
   background: #F3832C;
   border: none;
@@ -66,7 +66,7 @@ body{
   box-shadow: 2px 5px 1px 2px hsla(0, 0%, 0%, 0.274);
 
 }
-#forms #btn:hover{
+#btn:hover{
   animation-name: button;
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
@@ -306,6 +306,8 @@ body{
     flex-direction: row-reverse;
   }
   #img-about1{
+    position: relative;
+    bottom: ;
     width: 100%;
   }
   #title-about{
@@ -384,6 +386,11 @@ body{
     width: 100%;
   }
 
+}
+@media (min-width: 1020px){
+  #images{
+    
+  }
 }
 
 @media (min-width: 1700px){
