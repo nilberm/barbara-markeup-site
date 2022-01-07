@@ -43,8 +43,10 @@ body{
 #texts .prgf2{
   margin: 1.5rem .5rem 0 .5rem; 
   line-height: 1.5rem;
+  color: yellow;
 }
 #texts .prgf2 span{
+  color: yellow;
   font-weight: 700;
 }
 #texts .prgf3{
